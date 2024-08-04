@@ -1,0 +1,53 @@
+
+
+.sudokuContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 40px);
+  grid-template-rows: repeat(9, 40px);
+  gap: 0; /* No gap between cells */
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd; /* Border for individual cells */
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+}
+
+.button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+.loading {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
